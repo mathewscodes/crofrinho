@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crofrinho - Gestão financeira sem probrema">
+    
+    <meta name="theme-color" content="#2d5a27">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+    <title>Crofrinho - Entrar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">🐷</div>
+            <h1>Crofrinho</h1>
+            <p>Suas finanças sem "probrema"</p>
+        </header>
+
+        <main class="auth-card">
+            <h2 id="auth-title">Login</h2>
+            
+            <form id="auth-form">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Sua senha secreta" required>
+                </div>
+
+                <button type="submit" id="btn-action" class="btn-primary">Entrar</button>
+            </form>
+
+            <div class="divider">ou</div>
+
+            <button type="button" id="btn-google" class="btn-google">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+                Entrar com Google
+            </button>
+
+            <div class="auth-footer">
+                <p id="toggle-auth">Não tem conta? <span>Cadastre-se aqui</span></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Crofrinho Team</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

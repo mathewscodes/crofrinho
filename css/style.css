@@ -1,0 +1,190 @@
+/* Variáveis de Cores e Estilo */
+/* No topo do seu style.css, substitua essas variáveis: */
+:root {
+    --primary-color: #1a237e; /* Azul Indigo (Confiança e seriedade) */
+    --secondary-color: #ff8fa3; /* Rosa (Continua sendo o porquinho) */
+    --accent-color: #3949ab; /* Um azul um pouco mais claro para hover */
+    --bg-color: #f0f4f3;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Limite para parecer um app no PC */
+    text-align: center;
+}
+
+/* Header e Logotipo */
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+header p {
+    color: #666;
+    font-style: italic;
+}
+
+/* Cartão de Autenticação */
+.auth-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+/* Formulário e Inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+}
+
+/* Botões */
+.btn-primary {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s active, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1e3d1a;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* Footer do Card */
+.auth-footer {
+    margin-top: 20px;
+}
+
+#toggle-auth {
+    font-size: 0.9rem;
+    color: #666;
+    cursor: pointer;
+}
+
+#toggle-auth span {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Botão do Google */
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-google img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-google:hover {
+    background-color: #f8f8f8;
+}
+
+/* Rodapé da Página */
+footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Divisor */
+.divider {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+    margin: 0 10px;
+}
