@@ -19,6 +19,7 @@ O **Crofrinho** é um Web App de gestão financeira pessoal focado em simplicida
 
 ## 📁 Estrutura do Projeto
 
+```text
 crofrinho/
 ├── assets/             # Logos e imagens do app
 ├── css/
@@ -29,34 +30,6 @@ crofrinho/
 │   └── app.js              # Lógica da dashboard e banco de dados
 ├── index.html          # Tela de autenticação
 ├── dashboard.html      # Painel principal de controle
-└── README.md           # Documentação do projeto
-
-⚙️ Como rodar o projeto
-Clonar o repositório:
-
-Bash
-git clone [https://github.com/mathewscodes/crofrinho.git](https://github.com/seu-usuario/crofrinho.git)
-Configurar o Firebase:
-
-Crie um projeto no Firebase Console.
-
-Ative o Authentication (E-mail/Senha e Google).
-
-Crie um banco de dados Firestore.
-
-Copie suas credenciais e substitua no arquivo js/firebase-config.js.
-
-Executar:
-
-Abra a pasta no VS Code.
-
-Clique em Go Live (Extensão Live Server) para rodar localmente.
-
-📝 Próximos Passos
-[ ] Implementação de Service Workers para suporte a PWA (Instalação).
-
-[ ] Função para editar ou excluir lançamentos.
-
-[ ] Filtro de transações por conta bancária.
+└── README.md           # Documentação do projeto 
 
 Desenvolvido por Mathews - 2026
